@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-
-    </body>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Diabetes | Diagonosis</title>
+    <link href="static/main.css" rel="stylesheet">
+    <link rel="icon" type="image/icon" href="static/mainLogo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body class="text-left custom-background">
+    <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <img class="masthead-brand" src="static/logo.svg" width="143" height="71" alt="">
+    </div>
+  </header>
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading" class="text-nowrap">Powered by Machine Learning</h1>
+    <p class="font-weight-light">This application determines if you have diabetes mellitus or not with the aid of machine learning</p>
+    <p class="lead">
+      <a href="{{ url_for('entry') }}" class="btn btn-lg btn-success font-weight-light">Get Started</a>
+    </p>
+  </main>
+  <footer class="mastfoot mt-auto inner cover">
+    <div class="inner">
+        <p>Made with <i class="fa fa-heart" style="color:#27AE60;" aria-hidden="true"></i>
+            by
+            <a class="font-weight-normal text-white mb-2" href="https://github.com/AjibsBaba" target="_blank">AjibsBaba</a>
+        </p>
+    </div>
+  </footer>
+</div>
+</body>
 </html>
