@@ -1,19 +1,25 @@
 import os, json
 import joblib
-from flask import *
+from flask import request, render_template, url_for, Flask
 import numpy as np
 import pandas as pd
+
 
 model = 'gradientBoosting.pkl'
 classifier = joblib.load(model)
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def home():
     return render_template('home.html')
 
-@app.route('/diagnosis', methods=['GET', 'POST'])
+@app.route('/entry')
+def entry():
+    return render_template('model.html')
+
+
+@app.route('/diagnosis', methods=["POST", "GET"])
 def diagnosis():
     if request.method == 'POST':
         pregnancy = int(request.form['Pregnancies'])
@@ -24,10 +30,9 @@ def diagnosis():
         bmi = float(request.form['BMI'])
         dpf = float(request.form['DiabetesPedigreeFunction'])
         age = int(request.form['Age'])
-
         data = np.array([[pregnancy, glucose, bloodPressure, skinThickness, insulin, bmi, dpf, age]])
-        prediction = classifier.predict(data)
-        return render_template_string('model.html', prediction=prediction)
+        pred = classifier.predict(data)
+        return render_template('model.html', prediction=pred)
 
 
 if __name__ == '__main__':
