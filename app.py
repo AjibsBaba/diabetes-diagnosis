@@ -25,7 +25,7 @@ def entry():
 @app.route('/diagnosis', methods=["POST", "GET"])
 def diagnosis():
     if request.method == 'POST':
-        pregnancy = int(request.form['Pregnancies'])
+        pregnancy = int(0)
         glucose = int(request.form['Glucose'])
         bloodPressure = int(request.form['BloodPressure'])
         skinThickness = int(20)
