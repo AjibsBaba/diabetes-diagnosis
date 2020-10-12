@@ -34,40 +34,37 @@
       </div>
    {% endif %}
    </div>
-      <form action="/diagnosis" method="POST" class="container text-white">
+      <form action="/diagnosis" method="POST" id="custom-validation" class="container text-white">
           <div class="form-group">
             <label for="Pregnancies">Number of Pregnancies</label>
-            <input type="number" class="form-control" name="Pregnancies" aria-describedby="Help" placeholder="Enter the number of Pregnancies">
+            <input type="number" class="form-control" name="Pregnancies" aria-describedby="Help" placeholder="Enter the number of Pregnancies" required>
+            <div class="invalid-feedback">Please Enter the number of Pregnancies you have had</div>
           </div>
           <div class="row">
               <div class="col">
                 <label for="BMI">BMI</label>
-                <input type="number" class="form-control" name="BMI" placeholder="BMI">
+                <input type="number" class="form-control" name="BMI" placeholder="Body Mass Index" required>
              </div>
           <div class="col">
             <label for="Age">Age</label>
-            <input type="number" class="form-control" name="Age" placeholder="Age">
+            <input type="number" class="form-control" name="Age" placeholder="Enter your age in years" required>
         </div>
         </div>
           <div class="form-group">
             <label for="Glucose">Glucose</label>
-            <input type="number" class="form-control" name="Glucose" placeholder="Glucose level">
+            <input type="number" class="form-control" name="Glucose" placeholder="Enter your glucose level in mg/dL" required>
           </div>
           <div class="form-group">
             <label for="BloodPressure">Blood Pressure</label>
-            <input type="number" class="form-control" name="BloodPressure"  placeholder="Blood Pressure">
-          </div>
-          <div class="form-group">
-            <label for="SkinThickness">Skin Thickness</label>
-            <input type="number" class="form-control" name="SkinThickness" placeholder="Skin Thickness">
+            <input type="number" class="form-control" name="BloodPressure"  placeholder="Enter your blood pressure in mm Hg" required>
           </div>
           <div class="form-group">
             <label for="Insulin">Insulin</label>
-            <input type="number" class="form-control" name="Insulin" placeholder="Insulin">
+            <input type="number" class="form-control" name="Insulin" placeholder="Enter your insulin level in mIU/L" required>
           </div>
           <div class="form-group">
-            <label for="DiabetesPedigreeFunction">Diabetes family History</label>
-            <input type="number" class="form-control" name="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree Function">
+            <label for="DiabetesPedigreeFunction">Do any of your family members have diabetes</label>
+            <input type="number" class="form-control" name="DiabetesPedigreeFunction" placeholder="Enter 1 for Yes or 0 for No" required>
           </div>
           <button type="submit" class="btn btn-success btn-block">Submit</button>
  </form>
