@@ -1,0 +1,95 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.btn-predict {
+    background-color: rgb(166, 25, 46);
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-predict:hover {
+    color: rgb(166, 25, 46);
+    background-color: #FFFFFF;
+    padding: 15px 32px;
+    border: 2px solid rgb(166, 25, 46);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    background-color: rgb(166, 25, 46);
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+    color: rgb(166, 25, 46);
+    background-color: #FFFFFF;
+    padding: 15px 32px;
+    border: 2px solid rgb(166, 25, 46);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    background-color: rgb(166, 25, 46);
+    padding: 10px;
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+
+.name-tag {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+.fad-pad {
+  margin-right: 5px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.fad-pad:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+@media only screen and (max-width: 768px) {
+    /* For Mobile Devices */
+
+    .footer-container {
+        background-color: rgb(166, 25, 46);
+        padding: 10px;
+        position: absolute;
+        height: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-predict {
+    background-color: rgb(166, 25, 46);
+    border: none;
+    color: #FFFFFF;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+}
