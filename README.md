@@ -1,6 +1,3 @@
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -13,18 +10,7 @@
     <img src="static/logo.svg" alt="Logo" width="143" height="71">
   </a>
 
-  <h3 align="center">Diabetes | Diagnosis</h3>
-
-  <p align="center">
-    <br />
-    <br />
-    <a href="https://diabetes-diagnosis.herokuapp.com/">View Demo</a>
-    ·
-    <a href="https://github.com/AjibsBaba/diabetes-diagnosis/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/AjibsBaba/diabetes-diagnosis/issues">Request Feature</a>
-  </p>
-</p>
+  <h3 align="center">Diabetes Prediction App</h3>
 
 
 
@@ -36,7 +22,6 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -48,7 +33,7 @@
 ## About The Project
 
 
-This is the first machine learning project i will deploy on web it is a supervised learning model, I created an ensemble method that made use of about five models from which i picked the one with the highest frequency which is the Gradient Boosting algorithm after some hypermeter tuning i was able to get an accuracy of 82% which is because i was unable to gather a big dataset on diabetes
+This is my first ML project deployed on web. it is a supervised learning model, I created an ensemble method that made use of about five models from which i picked the one with the highest frequency which is the Gradient Boosting algorithm after some hypermeter tuning i was able to get an accuracy of 82% which is because i was unable to gather a big dataset on diabetes
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
@@ -57,7 +42,7 @@ This section should list any major frameworks that you built your project using.
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * [Scikit-learn](https://scikit-learn.org/stable)
 * [Numpy](https://numpy.org/)
-* [Pandas](http://pandas.pydata.org/)
+* [Pandas](https://pandas.pydata.org/)
 
 
 <!-- GETTING STARTED -->
@@ -69,7 +54,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-*  Python3.6+
+*  Python >=3.6
 ```sh
 flask run
 ```
@@ -119,9 +104,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Samuel Ajibade- [@ajibs_baba](https://twitter.com/ajibs_baba) - email@example.com
-
-Project Link: [https://github.com/AjibsBaba/diabetes-diagnosis](https://diabetes-diagnosis.herokuapp.com/)
+[Samuel Ajibade](samuelajibade22@gmail.com)
 
 
 
@@ -137,10 +120,8 @@ Project Link: [https://github.com/AjibsBaba/diabetes-diagnosis](https://diabetes
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/AjibsBaba/diabetes-diagnosis/graphs/contributors
 [forks-url]: https://github.com/AjibsBaba/diabetes-diagnosis/network/members
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/AjibsBaba/diabetes-diagnosis/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
 [issues-url]: https://github.com/AjibsBaba/diabetes-diagnosis/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
