@@ -25,16 +25,16 @@ def predict():
 @app.route('/diagnosis', methods=["POST", "GET"])
 def diagnosis():
     if request.method == 'POST':
-        pregnancy = int(0)
-        glucose = int(request.form['Glucose'])
-        bloodPressure = int(request.form['BloodPressure'])
-        skinThickness = int(20)
-        insulin = int(request.form['Insulin'])
-        bmi = float(request.form['BMI'])
-        dpf = float(request.form['DiabetesPedigreeFunction'])
-        age = int(request.form['Age'])
-        data = np.array([[pregnancy, glucose, bloodPressure, skinThickness,
-                          insulin, bmi, dpf, age]])
+        Pregnancies = int(0)
+        Glucose = int(request.form['Glucose'])
+        BloodPressure = int(request.form['BloodPressure'])
+        SkinThickness = int(20)
+        Insulin = int(request.form['Insulin'])
+        BMI = float(request.form['BMI'])
+        DiabetesPedigreeFunction = float(0.6)
+        Age = int(request.form['Age'])
+        data = np.array([[Pregnancies, Glucose, BloodPressure, SkinThickness,
+                          Insulin, BMI, DiabetesPedigreeFunction, Age]])
         pred = classifier.predict(data)
         return render_template('predict.html', prediction=pred)
 
