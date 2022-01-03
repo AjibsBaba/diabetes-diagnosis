@@ -40,4 +40,4 @@ def diagnosis():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(host='192.168.0.105', port=9180, debug=True)

@@ -22,6 +22,7 @@ body {
 
 .btn-submit {
     background-color: rgb(166, 25, 46);
+    border-radius: 20px;
     border: none;
     color: #FFFFFF;
     padding: 15px 32px;
