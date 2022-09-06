@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction App • AjibsBaba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta name="keywords" content="AjibsBaba, Diabetes, Type 2, Diagnose, Web">
+    <meta name="copyright" content="Samuel Ajibade(AjibsBaba)">
+    <meta name="theme-color" content="#990033">
+    <meta name="msapplication-navbutton-color" content="#990033">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#990033">
+    <meta name="og:title" content="Diabetes Prediction App • AjibsBaba">
+    <meta name="og:type" content="website">
+    <meta name="twitter:creator" content="@ajibs_baba">
+    <meta name="twitter:site" content="@ajibs_baba">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image"
+          content="https://res.cloudinary.com/developerlomo/image/upload/v1651420676/AjibsBaba/AjibsBaba_Twitter_Summary-01_x3gdb0.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="{{ url_for('static', filename='logo.svg') }}">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        red: '#990033',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+{% block content %}
+{% endblock content %}
+</body>
+</html>
