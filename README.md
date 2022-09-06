@@ -1,3 +1,5 @@
+[![Diabetes Diagnosis Flow](https://github.com/AjibsBaba/diabetes-diagnosis/actions/workflows/cicd.yml/badge.svg)](https://github.com/AjibsBaba/diabetes-diagnosis/actions/workflows/cicd.yml)
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
