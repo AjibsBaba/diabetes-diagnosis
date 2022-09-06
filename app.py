@@ -1,8 +1,8 @@
 import joblib
-from flask import request, render_template, Flask
 import numpy as np
+from flask import request, render_template, Flask
 
-model = 'gradientBoosting.pkl'
+model = 'modelExport.pkl'
 classifier = joblib.load(model)
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
@@ -14,12 +14,12 @@ app.config.update(
 
 @app.route('/')
 def landing():
-    return render_template('landing.html')
+    return render_template('home.html')
 
 
 @app.route('/predict', methods=["POST", "GET"])
 def predict():
-    return render_template('predict.html')
+    return render_template('test.html')
 
 
 @app.route('/diagnosis', methods=["POST", "GET"])
@@ -36,8 +36,4 @@ def diagnosis():
         data = np.array([[Pregnancies, Glucose, BloodPressure, SkinThickness,
                           Insulin, BMI, DiabetesPedigreeFunction, Age]])
         pred = classifier.predict(data)
-        return render_template('predict.html', prediction=pred)
-
-
-if __name__ == '__main__':
-    app.run(host='192.168.0.105', port=9180, debug=True)
+        return render_template('test.html', prediction=pred)
