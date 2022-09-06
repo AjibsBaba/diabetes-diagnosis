@@ -1,38 +1,38 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="sm:px-24 pt-8 sm:py-32 px-12 py-16">
-        <h1 class="text-xl tracking-tighter">Diabetes Prediction App</h1>
-        <p class="text-sm font-light w-2/3 mt-2">All the data collected here is required in order to run a diagnosis and
+    <div class="sm:px-24 sm:py-32 px-10 py-10">
+        <h2 class="font-sans tracking-tighter text-black text-6xl sm:text-7xl font-extrabold">Diagnosis Form</h2>
+        <p class="mt-6 font-light sm:w-2/3">All the data collected here is required in order to run a diagnosis and
             will not be stored on our database</p>
         <form action="{{ url_for('diagnosis') }}" class="mt-16" enctype="multipart/form-data" method="POST"
               autocomplete="off">
             <label>
                 <input type="text" name="BMI" placeholder="Body Mass Index (BMI)"
-                       class="rounded-md px-4 py-3 w-2/3 border border-black hover:border-red focus:outline-none"
+                       class="rounded-md px-4 py-3 sm:w-2/3 w-full border border-black hover:border-red focus:outline-none"
                        required>
             </label>
             <label>
                 <input placeholder="Age" name="Age" maxlength="3"
-                       class="rounded-md mt-4 px-4 py-3 w-2/3 border border-black hover:border-red focus:outline-none"
+                       class="rounded-md mt-4 px-4 py-3 sm:w-2/3 w-full border border-black hover:border-red focus:outline-none"
                        required>
             </label>
             <label>
                 <input placeholder="Insulin Level" name="Insulin" maxlength="3"
-                       class="rounded-md mt-4 px-4 py-3 w-2/3 border border-black hover:border-red focus:outline-none"
+                       class="rounded-md mt-4 px-4 py-3 sm:w-2/3 w-full border border-black hover:border-red focus:outline-none"
                        required>
             </label>
             <label>
                 <input placeholder="Glucose Level" maxlength="3" name="Glucose"
-                       class="rounded-md mt-4 px-4 py-3 w-2/3 border border-black hover:border-red focus:outline-none"
+                       class="rounded-md mt-4 px-4 py-3 sm:w-2/3 w-full border border-black hover:border-red focus:outline-none"
                        required>
             </label>
             <label>
                 <input placeholder="Blood Pressure" maxlength="3" name="BloodPressure"
-                       class="rounded-md mt-4 px-4 py-3 w-2/3 border border-black hover:border-red focus:outline-none"
+                       class="rounded-md mt-4 px-4 py-3 sm:w-2/3 w-full border border-black hover:border-red focus:outline-none"
                        required>
             </label>
             <button type="submit"
-                    class="mt-6 px-4 py-3 w-1/2 tracking-tighter rounded border border-red hover:bg-red hover:text-white text-red duration-500">
+                    class="mt-6 px-4 py-3 sm:w-1/2 w-full tracking-tighter rounded border border-red hover:bg-red hover:text-white text-red duration-500">
                 Run Diagnosis
             </button>
         </form>

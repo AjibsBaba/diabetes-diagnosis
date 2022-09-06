@@ -1,22 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="container">
-        <div class="sm:px-24 pt-8 sm:py-32 px-12 py-16">
-            <h1 class="text-xl tracking-tighter">Diabetes Prediction App</h1>
-            <h2 class="mt-12 font-sans tracking-tighter text-black text-7xl font-extrabold w-96">Diagnosis of <span
-                    class="text-red">Diabetes </span>Mellitus</h2>
-            <p class="mt-8 w-96 font-light">Detecting medical conditions early and treating them is one of the most
-                effective ways of living.</p>
-            <a href="{{ url_for('predict') }}">
-                <button type="button"
-                        class="px-12 py-4 bg-black text-white mt-6 tracking-tight text-sm duration-500 border border-black hover:bg-white hover:text-black rounded-md">
-                    Run a test
-                </button>
-            </a>
-        </div>
-        <div class="stroke-red">
-            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_YEZz8Y.json" background="transparent"
-                           speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-        </div>
+    <div class="sm:px-24 sm:py-32 px-10 py-10">
+        <h2 class="font-sans tracking-tighter text-black text-6xl sm:text-7xl font-extrabold sm:w-96">Diagnosis of <span
+                class="text-red">Diabetes </span>Mellitus</h2>
+        <p class="mt-8 sm:w-96 font-light">Detecting medical conditions early and treating them is one of the most
+            effective ways of living.</p>
+        <a href="{{ url_for('predict') }}">
+            <button type="button"
+                    class="px-12 py-4 bg-black text-white mt-6 tracking-tight text-sm duration-500 border border-black hover:bg-white hover:text-black rounded-md">
+                Run a test
+            </button>
+        </a>
     </div>
 {% endblock %}
